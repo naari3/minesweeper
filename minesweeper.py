@@ -71,7 +71,7 @@ class Minesweeper(object):
             print(str(y+1) + ' ' + ' '.join(['.' if self.opened_board[y][x]==0 else 'v' if self.opened_board[y][x]==2 else str(self.round_board[y][x]) if self.round_board[y][x]!=0 else ' ' for x in range(self.width)]))
 
 if __name__ == '__main__':
-    a = Minesweeper(4,4,1)
+    a = Minesweeper(9,9,10)
     while True:
         a.print_board()
         p = input('> ')
